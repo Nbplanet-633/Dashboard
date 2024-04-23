@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(5, 17, 109);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(205, 253, 59);
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.profile-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("profile.jpg");
+    background-size: contain;
+    border-radius: 100%;
+    
+}
+
+.profile-name {
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+
+.user-name {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.user-position {
+    color: rgb(169, 243, 247);
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+.features:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-panel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.926);
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.nav-panel p:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 520px){
+    .navbar {
+        height: 50%;
+    }
+}
+
+.nav-settings {
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.nav-settings p {
+    margin-left:5px ;
+}
+
