@@ -6,6 +6,7 @@
     background-color: rgb(5, 17, 109);
     height: 70px;
     width: 100%;
+    font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     
@@ -93,3 +94,61 @@ a {
     margin-left:5px ;
 }
 
+/* main container */
+
+/* calender */
+
+.dashboard-items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1.2em;
+    min-width: 350px;
+    border-radius: 5px 5px 0 0;  /*table rows still have borders, overflow hides that one*/
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0.15); 
+}
+
+.table th {
+    background-color: #009879;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.week {
+    background-color: rgb(36, 177, 205);
+    text-align: left;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {   /*for making even rows some shadow*/
+    background-color: #f3f3f3;
+}
+
+
+#last-row {
+    border-bottom: 2px solid #009879;
+}
+
+td:hover {
+    background: lightsalmon;
+}
+
+.change-month:hover {
+    cursor: pointer;
+    color: rgb(231, 141, 195);
+}
