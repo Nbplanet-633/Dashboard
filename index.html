@@ -39,8 +39,11 @@
     <!-- Dashboard   -->
 
     <div class="dashboard-items">
-        <!-- <div class="calender"> -->
-            <div class="container1">
+
+        <!-- calender -->
+
+        <div class="calender"> 
+             <div class="container1">
             <table class="table">
                 <tr >
                     <th colspan="7" class="month">
@@ -100,50 +103,100 @@
                     
                 </tr>
             </table>
+        </div> 
         </div>
-        <!-- </div> -->
 
         <!-- notifications & e-mails -->
-
-        <div class="notify-panel">
-            <div class="message-top">
-                <p> 
-                    <i class="fa-regular fa-message message-icon"></i>
-                    Messages</p>
-                <button id="read">mark all as read</button>
+        <div class="emails-notifications">
+            <div class="notify-panel">
+                <div class="message-top">
+                    <p> 
+                        <i class="fa-regular fa-message message-icon"></i>
+                        Messages</p>
+                    <button id="read">mark all as read</button>
+                </div>
+                <div class="message-body">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input placeholder="search in mails" class="search-button">
+                </div>
+                <div class="message">message 1</div>
+                <div class="message">message 2</div>
+                <div class="message">message 3</div>
+                <div class="message">message 4</div>
+                </div>
             </div>
-            <div class="message-body">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input placeholder="search in mails" class="search-button">
-            </div>
-            <div class="message">message 1</div>
-            <div class="message">message 2</div>
-            <div class="message">message 3</div>
-            <div class="message">message 4</div>
         </div>
-        </div>
 
-        <div class="tasks">
-            <h4> To-Do </h4>
-            <div class="task-features">
-                <p class="task-filter">
-                    <i class="fa-regular fa-sun"></i>
-                    My Day</p>
-                <p class="task-filter">
-                    <i class="fa-regular fa-square-check"></i>
-                    Planned</p>
-                <p class="task-filter">
-                    <i class="fa-regular fa-star"></i>
-                    Important</p>
+      <!--   To-Do --> 
+        <div class="ToDo-taskbar">
+            <div class="tasks">
+                <h4> To-Do </h4>
+                <div class="task-features">
+                    <p class="task-filter">
+                        <i class="fa-regular fa-sun"></i>
+                        My Day</p>
+                    <p class="task-filter">
+                        <i class="fa-regular fa-square-check"></i>
+                        Planned</p>
+                    <p class="task-filter">
+                        <i class="fa-regular fa-star"></i>
+                        Important</p>
+                </div>
+                <div class="add-task">
+                    <input placeholder="Add your task">
+                    <button class="task-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add</button>
+                </div>
+                
+            </div> 
+        </div>
+        <!-- Budget-Expenses -->
+        <div class="budget-tracker">
+            <div class="budget">
+                <div class="budget-head">
+
+                    <h3>Expenses</h3>
+                    <button id="add-expensebtn">Add Expense</button>
+
+                    <div class="budger-options">
+                        <p>Period:</p>
+                        <select for="Period" class="budget-filter">
+                            <option value="today">Today</option>
+                            <option value="this week">This week</option>
+                            <option value="this month">This month</option>
+                            <option value="this year">This year</option>
+                        </select>
+
+                        <p>categories</p>
+                        <select for="budget-cat" class="budget-filter">
+                            <option value="all">All</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Food">Food</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <hr color="grey">
+                <div class="budget-body">
+                    <div class="budget-graph">
+                        <div class="budget-center">
+                            <p>$2,255.95</p>
+                            <p>Total</p>
+                        </div>
+                    </div>
+
+                    <div class="budget-details">
+                        <div class="box box1"></div>
+                        <p>Shopping: $799.99</p>
+                        <div class="box box2"></div>
+                        <p>Food: $499.95</p>
+                        <div class="box box3"></div>
+                        <p>Others: $956.01 </p>
+                    </div> 
+                </div>
             </div>
-            <div class="add-task">
-                <input placeholder="Add your task">
-                <button class="task-btn">
-                    <i class="fa-solid fa-plus"></i>
-                    Add</button>
-            </div>
-            
         </div>
     </div>
 

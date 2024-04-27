@@ -14,7 +14,6 @@ body  {
     font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .border {
@@ -103,6 +102,13 @@ a {
 
 /* calender */
 
+.calender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .dashboard-items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
@@ -110,17 +116,13 @@ a {
     
 }
 
-.container1 {
-    /* max-width: 500px; */
-    place-self: center;
-    background-color: #dddddd;
-    margin-top: 20px;
-    margin-left: 15px; 
-    border-radius: 5px 5px 0 0;
-}
 
-@media (max-width:470px) {
-    margin-right: 10px;
+.container1 {
+    max-width: max-content; 
+    background-color: #dddddd;
+    /* margin-top: 20px;
+    margin-left: 15px;  */
+    border-radius: 5px 5px 0 0;
 }
 
 .table {
@@ -172,17 +174,22 @@ td:hover {
 
  /* emails and notifications */
 
+.emails-notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .notify-panel {
     background-color: rgb(205, 220, 201);
     border: 2px solid rgb(56, 184, 196);
     border-radius: 10px;
-    margin-top: 4rem;
-    margin-right: 4rem;
-    margin-left: 15px;
+    min-width: 60%;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0.15); 
-    max-width: 80%;
     align-items: center;
+    min-height: 70%;
+    
 }
 
 .message-top {
@@ -239,15 +246,18 @@ td:hover {
 
 /* taskbar */
 
+.ToDo-taskbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tasks {
     background-color: deepskyblue;
     height: 100px;
     min-width: 60%;
     max-width: 80%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
     border: 3px solid blanchedalmond;
     border-radius: 20px;
     overflow: hidden;
@@ -303,4 +313,119 @@ td:hover {
     cursor: pointer;
     background-color: burlywood;
     color: white;
+}
+
+
+/* Budget-tracker */
+
+.budget-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.budget {
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(to top, #ecebee, 20%, #f8e9f9);
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.budget-head {
+    background-color: #E5F4E3;
+    padding: 5px;
+}
+
+.budget-head h3{
+    display: inline-block;
+   width: 70%;
+   font-size: 1.5rem;
+   color: #5DA9E9;
+   margin: 5px;
+ }
+
+#add-expensebtn{
+    margin-right: 5px;
+    border: 2px solid #CE5374;
+    background-color: #CE5374;
+    border-radius: 10px;
+}
+
+.budger-options {
+    display: flex;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    
+}
+
+.budget-filter {
+    margin-right: 16px;
+    margin-left: 4px;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+}
+
+.budget-body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 20px;
+}
+
+.budget-graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #DB3069 70deg,
+        #6EEB83 0 235deg,
+        #DAB785 0
+    );
+   }
+.budget-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    text-align: center;
+    margin: 3px;
+    font-size: 0.95rem;
+}
+
+.box {
+    height: 10px;
+    width: 10px;
+}
+
+.box1 {
+    background-color: #DB3069;
+}
+
+.box2 {
+    background-color: #6EEB83;
+}
+
+.box3 {
+    background-color: #DAB785;
+}
+
+
+.budget-details {
+    min-width: fit-content;
+}
+    
+.budget-details p:hover {
+    cursor: pointer;
+    background-color: #e4bae8;
 }
